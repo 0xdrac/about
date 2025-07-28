@@ -1,0 +1,162 @@
+body {
+    
+    font-family: 'Inter';
+    background: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: 'Inter', Arial, sans-serif;
+      
+      
+    
+  }
+  
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+p{
+    margin-bottom: 25px;
+    line-height: 1.4; 
+}
+
+.body{
+    width: 100%;
+    
+    font-weight: 100;
+    font-size: 21px;
+    color: #969696;
+    text-transform: lowercase;
+    
+    font-stretch: expanded;
+    font-display: swap;
+    
+    
+}
+.goback{
+    font-size: 110px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    width: 100%;
+}
+a{
+    color: #1886FF;
+    text-decoration: none;
+}
+
+/* Navbar */
+  
+  .navbar {
+    padding: 36px 0 0 0; /* Matches top spacing from screenshot */
+    display: flex;
+    gap: 34px;            /* Even space between links, visually matching screenshot */
+    align-items: center;
+    
+    /* No extra decoration for minimalist style */
+  }
+  
+  .nav-link {
+    color: #1677ff;     /* Standard link blue seen in screenshot */
+    text-decoration: underline;
+    font-size: 20px;    /* Matches large, touch-friendly text */
+    font-weight: 0;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #0956ba;     /* Slightly darker blue on hover (optional) */
+  }
+  
+  @media (max-width: 700px) {
+    .navbar {
+      gap: 20px;
+      padding-top: 20px;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+    }
+  }
+
+/* contact */
+.container {
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+  }
+  .input-email {
+    width: 100%;
+  max-width: 510px;
+  padding: 1em 1.1em;
+  font-size: 20px;
+  border: none;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  margin-top: 10px;
+  
+  color: #222;
+  }
+  .input-email.error {
+    border: 2px solid #e54848 !important;
+    background: #fff5f5;
+  }
+  
+  .input-email::placeholder {
+    color: #ababab;
+  }
+  
+  .input-email.error::placeholder {
+    color: #e54848;
+  }
+  
+  .main-btn {
+    width: 100%;            /* keep full width, or set a fixed width if needed */
+  max-width: 554px;
+  padding: 1em 1.1em;       /* reduce vertical padding for slimness */
+  background: #000;
+  color: #fff;
+  border-radius: 6px;     /* slightly less rounded */
+  border: none;
+  font-size: .8em;         /* reduce if you want an even slimmer look */
+  font-family: inherit;
+  font-weight: 500;
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: background 0.18s;
+  }
+  .main-btn:hover {
+    background: #333;
+  }
+  .central-image {
+    width: 100%;
+    max-width: 555px;
+    
+    margin-bottom: 20px;
+    
+    display: block;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.09);
+  }
+  .contact-line {
+    color: #888;
+    font-size: 1em;
+    margin-top: 26px;
+    text-align: left;
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 500px) {
+    .container, .contact-line {
+      padding: 0 8px;
+      max-width: 100%;
+    }
+    .central-image {
+      max-width: 100%;
+    }
+  }
+
